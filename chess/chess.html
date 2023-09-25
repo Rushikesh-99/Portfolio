@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="black.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: lightslategray;
+        }
+
+
+        section{
+            align-items: center;
+            justify-content: center;
+
+            width: 48%;
+            height:84%;
+            border: 2px black solid;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            background-color: white;
+            padding: 1%;
+        }
+
+        div{
+            display: flex;
+            width: 12%;
+            height: 12.5%;
+            border: 1px saddlebrown solid;
+            position: relative;
+            
+        }
+
+        .b1:nth-of-type(odd){
+            background-color: darkred;
+        }
+
+        .w1:nth-of-type(even){
+            background-color:darkred;
+        }
+
+        .b1:nth-of-type(even){
+            background-color: white;
+        }
+        
+         #rook1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 000px;
+            left: 000px;
+            z-index: 1;
+            bottom: 100px;
+
+        }
+
+        #rook2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+
+        }
+
+        #horse1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            /* right: 100px; */
+            left: 0px;
+            z-index: 1;
+
+        }
+        
+        
+        #horse2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #bishop1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+        
+
+        #bishop2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 000px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #queen{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 000px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #king{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+        #pawn3{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn4{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn5{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn6{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn7{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+
+        }
+
+        #pawn8{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 000px;
+            right: 00px;
+            left: 0px;
+            z-index: 1;
+
+        }
+
+        @media(max-width:320px) {
+            section{
+                width: 100%;
+                height: 60%;
+
+            }
+            
+        }
+
+        @media(max-width:375px) {
+            section{
+                width: 100%;
+                height: 60%;
+
+
+            }
+            
+        }
+        @media(max-width:425px) {
+            section{
+                width: 100%;
+                height: 60%;
+
+
+            }
+            
+        }
+        @media(max-width:768px) {
+            section{
+                width: 90%;
+
+            }
+            
+        }
+
+
+
+
+
+
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="b1"><img id="rook1" src="image/white rook.png"></div>
+        <div class="b1"><img id="horse1" src="image/white horse.png"></div>
+        <div class="b1"><img id="bishop1" src="image/white bishop.png"></div>
+        <div class="b1"><img id="king" src="image/white king.png"></div>
+        <div class="b1"><img id="queen" src="image/white queen.png"></div>
+        <div class="b1"><img id="bishop2" src="image/white bishop.png"></div>
+        <div class="b1"><img id="horse2" src="image/white horse.png"></div>
+        <div class="b1"><img id="rook2" src="image/white rook.png"></div>
+
+        <div class="w1"><img id="pawn1" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn2" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn3" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn4" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn5" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn6" src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn7"src="image/white pawn.png"></div>
+        <div class="w1"><img id="pawn8" src="image/white pawn.png" ></div>
+
+
+
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+
+
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+
+
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+        <div class="w1"></div>
+
+
+        <div class="b1"><img id="bpawn1" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn2" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn3" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn4" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn5" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn6" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn7" src="image/black pawn.png" ></div>
+        <div class="b1"><img id="bpawn8" src="image/black pawn.png" ></div>
+
+
+        <div class="w1"><img id="brook1" src="image/rook black.png"></div>
+        <div class="w1"><img id="bhorse1" src="image/horse black.png"></div>
+        <div class="w1"><img id="bbishop1" src="image/bishop black.png"></div>
+        <div class="w1"><img id="bking" src="image/black king.png"></div>
+        <div class="w1"><img id="bqueen" src="image/queen black.png"></div>
+        <div class="w1"><img id="bbishop2" src="image/bishop black.png"></div>
+        <div class="w1"><img id="bhorse2" src="image/horse black.png"></div>
+        <div class="w1"><img id="brook2" src="image/rook black.png"></div>
+
+
+
+
+
+
+        
+
+
+
+     
+
+
+    </section>
+
+    <script src="chess.js"></script>
+
+    
+</body>
+</html>

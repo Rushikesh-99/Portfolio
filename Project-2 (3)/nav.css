@@ -1,0 +1,423 @@
+body{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+.se1{   
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+div{
+    height: 75px;
+    width: 10%;
+    /* border: 1px cadetblue solid; */
+    font-family: cursive;           
+    font-weight: 500;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+.d4{
+    width: 10%;
+}
+.d7{
+    width: 55%;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px chartreuse solid; */
+    font-family: cursive;           
+
+}
+.srch{
+    border-radius: 10px;
+    width: 70%;
+    height: 35px;
+    background-color: rgb(239, 239, 245);
+    border: 1px;
+    text-align: center;
+}
+.d8{
+    width: 5%;
+
+    display: flex;
+    font-size: 70%;
+    font-weight: normal;
+    align-items: center;
+    align-content: center;
+}
+
+
+.sec1{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    opacity: 0.9;
+    border: 5px ghostwhite solid;
+    border-bottom:  5px black double;
+    height: 390px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+sup{
+    color: red;
+    font-size: xx-small;
+}
+/* NAVIGATION BAR ENDS */
+
+ a{
+    text-decoration: none;
+ }
+ @media(max-width:1440px) {
+    .d2 .s1{
+        font-size: 200%;
+    }
+    div{
+        width: 8%;
+    }
+    .d4{
+        width: 12%;
+    }
+    .d8{
+        width: 7%;
+        font-size: 100%;
+    }
+
+
+    
+ }
+ @media(max-width:1024px) {
+    .d2 .s1{
+        font-size: 180%;
+    }
+    div{
+        width: 8%;
+        font-size: 100%;
+    }
+    .d4{
+        width: 20%;
+    }
+    .d8{
+        width: 10%;
+        font-size: 70%;
+
+    }
+    .sec1 .d1{
+        width: 60%;
+    }
+    .sec1 .d2{
+        width: 40%;
+    }
+    .sec2 div{
+        font-size:x-large;
+        padding: 10px;
+    }
+    .sec4{
+        font-size: 40px;
+    }
+    .sec3 .adv2{
+        width: 25%;
+    }
+    .sec3 .adv3{
+        width: 25%;
+    }
+    .sec3 .adv4{
+        width: 25%;
+    }
+    .sec3 .adv5{
+        width: 25%;
+    }
+    .sec3 .adv6{
+        width: 25%;
+    }
+    .sec3 .adv7{
+        width: 25%;
+    }
+    .sec3 div{
+        width: 25%;
+    }
+
+    .sec5 div{
+        width: 30%;
+    }
+
+ }
+ @media(max-width:768px) {
+    .se1 div{
+        width: 10%;
+        font-size: 65%;
+        font-weight: bold;
+    }
+    div img{
+        width: 50px;
+        height: 50px;
+    }
+    .se1 .d8{
+        width: 9%;
+        font-size: 70%;
+        font-weight: bold;
+
+
+    }
+    .se1 .d8 img{
+        width: 30px;
+        height: 30px;
+    }
+    .se1 div.d7{
+        width: 35%;
+    }
+    .se1 .d7 .srch{
+        width: 100%;
+    }
+    .srch{
+        font-size: 80%;
+    }
+    .sec1 .d1{
+        width: 50%;
+        height: 270px;
+
+    }
+    .sec1 .d2{
+        width: 50%;
+        height: 250px;
+        font-size: 80%;
+
+    }
+    .sec1{
+        height: 280px;
+    }
+    .d2 div{
+    justify-content: center;
+    width: 25%;
+    height: 25px;
+    padding-top: 0px;
+    gap: 5px;
+
+
+    }
+     .d2 .s1{
+     width: 150%;
+    }
+    .d2 .s1{
+        font-size: 280%;
+    }
+    .d2 .s3{
+        font-size: 280%;
+    }
+    .d2 .s2{
+        font-size: 280%;
+    }
+   .s4 p{
+    font-size: 200%;
+
+
+   }
+   .s5 {
+    font-size: 200%;
+
+
+   }
+   .sec2 div{
+    font-size: 100%;
+    height: min-content;
+
+   }
+   .sec4{
+    font-size: 100%;
+    height: min-content;
+
+   }
+   .sec3 div{
+    width: 50%;
+   }
+   .sec5 div{
+    width: 80%;
+   }
+   .sec3 .adv2{
+        width: 45%;
+    }
+    .sec3 .adv3{
+        width: 45%;
+    }
+    .sec3 .adv4{
+        width: 45%;
+    }
+    .sec3 .adv5{
+        width: 45%;
+    }
+    .sec3 .adv6{
+        width: 45%;
+    }
+    .sec3 .adv7{
+        width: 45%;
+    }
+    .sec3 div{
+        width: 45%;
+    }
+    .sec3{
+        justify-content: space-evenly;
+    }
+
+ }
+ @media(max-width:425px) {
+
+    .se1 div{
+        width: 10%;
+        font-size: 45%;
+        font-weight: bold;
+    }
+    div img{
+        width: 30px;
+        height: 30px;
+    }
+    .se1 .d8{
+        width: 9%;
+        font-size: 40%;
+        font-weight: bold;
+
+
+    }
+    .se1 .d8 img{
+        width: 10px;
+        height: 10px;
+    }
+    .se1 div.d7{
+        width: 35%;
+    }
+    .se1 .d7 .srch{
+        width: 100%;
+    }
+    .srch{
+        font-size: 50%;
+    }
+    .sec1 .d1{
+        width: 50%;
+        height: 270px;
+
+    }
+    .sec1 .d2{
+        width: 50%;
+        height: 250px;
+        font-size: 50%;
+
+    }
+    .sec1{
+        height: 280px;
+    }
+    .d2 div{
+    justify-content: center;
+    width: 25%;
+    height: 25px;
+    padding-top: 0px;
+    gap: 5px;
+
+
+    }
+     .d2 .s1{
+     width: 150%;
+    }
+    .d2 .s1{
+        font-size: 280%;
+    }
+    .d2 .s3{
+        font-size: 280%;
+    }
+    .d2 .s2{
+        font-size: 280%;
+    }
+   .s4 p{
+    font-size: 200%;
+
+
+   }
+   .s5 {
+    font-size: 200%;
+
+
+   }
+   .sec2 div{
+    font-size: 100%;
+    height: min-content;
+
+   }
+   .sec4{
+    font-size: 100%;
+    height: min-content;
+
+   }
+   .sec3 div{
+    width: 50%;
+   }
+   .sec5 div{
+    width: 80%;
+   }
+   .sec3 .adv2{
+        width: 45%;
+    }
+    .sec3 .adv3{
+        width: 45%;
+    }
+    .sec3 .adv4{
+        width: 45%;
+    }
+    .sec3 .adv5{
+        width: 45%;
+    }
+    .sec3 .adv6{
+        width: 45%;
+    }
+    .sec3 .adv7{
+        width: 45%;
+    }
+    .sec3 div{
+        width: 45%;
+    }
+    .sec3{
+        justify-content: space-evenly;
+    }
+
+ }
+ @media(max-width:320px) {
+
+     .d2 .s1{
+     width: 150%;
+    }
+    .d2 .s1{
+        width: 250%;
+        font-size:280%;
+    }
+    .d2 .s3{
+        font-size: 280%;
+    }
+    .d2 .s2{
+        font-size: 280%;
+    }
+   .s4 p{
+    font-size: 200%;
+
+
+   }
+   .s5 {
+    font-size: 200%;
+
+
+   }
+  
+}

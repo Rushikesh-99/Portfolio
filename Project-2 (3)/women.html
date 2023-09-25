@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="media.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            min-height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+        }
+        .se1{
+            display: flex;
+            text-align: center;
+            width: 100%;
+            border: 5px ghostwhite solid;
+
+        }
+        div{
+            height: 75px;
+            width: 10%;
+            /* border: 1px cadetblue solid; */
+            font-family: cursive;           
+            font-weight: 500;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+            justify-content: center;
+            padding: 5px;
+            
+        }
+        .d4{
+            width: 10%;
+        }
+        .d7{
+            width: 55%;
+            align-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px chartreuse solid; */
+            font-family: cursive;           
+        
+        }
+        .srch{
+            border-radius: 10px;
+            width: 70%;
+            height: 35px;
+            background-color: rgb(239, 239, 245);
+            border: 1px;
+            text-align: center;
+        }
+        .d8{
+            width: 5%;
+            display: flex;
+            font-size: 70%;
+            font-weight: bold;
+            align-items: center;
+            align-content: center;
+        }
+        .s{
+            width: 100%;
+            margin-top: 0px;
+            padding: 20px;
+            /* border: 2px springgreen solid; */
+            font-size: 100%;
+        }
+        .s p{
+            font-size: 120%;
+            color: grey;
+        }
+
+        .s1{
+            width: 100%;
+            /* height: 1000px; */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* border: 2px solid red; */
+
+        }
+        .s1d1{
+            width: 15%;
+            /* border: 20px solid green; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* position: relative; */
+            min-height: 1000px;
+            align-content: first baseline;
+            /* gap: 5px; */
+
+        }
+        .s1d2{
+            width: 85%;
+            /* height: 500px; */
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-wrap: wrap;
+            align-content: first baseline;
+
+        }
+
+        .s1b1{
+            width: 100%;
+            height: 50px;
+            /* border: 2px saddlebrown solid; */
+            display:flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 30%;
+            
+        }
+        .s1b1 div{
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px salmon solid; */
+        }
+        .s1b1 :nth-child(2){
+            color: red;
+        }
+
+        .s1b2{
+            width: 100%;
+            height: 150px;
+            border: 1px gray solid;
+            border-left: 0px;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 80%;
+            gap: 10px;
+            font-weight: bolder;
+        }
+        .s1b2 label{
+            width: 100%;
+        }
+        .s1b3{
+            width: 100%;
+            height: 280px;
+            border: 1px gray solid;
+            border-bottom: 0px; 
+            border-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+
+        }
+    
+
+         .c1{
+            width: 70%;
+            font-weight: bolder;
+            /* border: 2px solid goldenrod; */
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+            font-size: 80%;
+
+        }
+        .c2{
+            width: 30%;
+        }
+
+        .s1b3 div img{
+        
+            width: 45%;
+            
+        }
+
+        .l1{
+            padding-left: 30px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            top: 50px;
+        }
+        .l1 label{
+            width: 100%;
+            font-size: 90%;
+
+        }
+        .s1b4{
+            width: 100%;
+            height: 200px;
+            border: 1px gray solid;
+            /* border-bottom: 1px;  */
+            border-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            font-size: 80%;
+
+
+
+        }
+        .l2{
+            padding-left: 30px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            top: 10px;
+        }
+        .l2 label{
+            width: 100%;
+            font-size: 90%;
+
+        }
+        .c3{
+            width: 70%;
+                /* font-weight: bold; */
+            /* border: 2px solid goldenrod; */
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+            font-size: 110%;
+
+        }
+        label div{
+            width: 12px;
+            height: 12px;
+            /* border: 1px solid black; */
+            /* background-color: red; */
+            border-radius: 50px;
+        }
+        .co1{
+            background-color: red;
+        }
+        .co2{
+            background-color: blue;
+        }
+        .co3{
+            background-color: greenyellow;
+        }
+        .co4{
+            background-color: brown;
+        }
+        .co5{
+            background-color: black;
+        }
+        .co6{
+            background-color: white;
+            border: 1px solid black;
+        }
+
+
+        .l3{
+            padding-left: 30px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            top: 50px;
+        }
+        .l3 label{
+            width:100%;
+            font-size: 90%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .s1e1{
+            width: 100%;
+            height: 50px;
+            /* border: 2px solid black; */
+            justify-content: right;
+        }
+        .sort{
+            width: 30%;
+            height: 50px;
+            /* border: 1px solid black; */
+            padding: 10px;
+        }
+        .sort label{
+            border: 1px solid gray;
+            width: 90%;
+            justify-content: flex-end;
+            font-size: 100%;
+            
+
+        
+        }
+
+        .sort input{
+            height: 40px;
+            width: 80%;
+            font-size: 100%;
+            text-align: center;
+            border: none;
+            /* border: 2px saddlebrown solid; */
+        }
+        .s1e2{
+            width: 100%;
+            /* border: 2px solid black; */
+            background: linear-gradient(0,white,lightgrey);
+            padding: 35px;
+            padding-right: 0px;
+            padding-left: 0px;
+            gap: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            height: min-content;
+        }
+        .e2d1{
+            width: 15%;
+            height: 350px;
+            /* border: 1px solid green; */
+            background: url(image/w\ formal.jpg);
+            background-position: relative;
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+            align-content: flex-end;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+        .e2d1 p {
+            font-size: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+         }
+         @media(max-width:1440px) {
+            .d2 .s1{
+                font-size: 200%;
+            }
+            div{
+                width: 8%;
+            }
+            .d4{
+                width: 12%;
+            }
+            .d8{
+                width: 8%;
+            }
+            .s1b1 div{
+                width: 50%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px salmon solid; */
+                font-size: 80%;
+            }
+            .s p{
+                font-size: 100%;
+                color: grey;
+            }
+            .sort label{
+                 border: 1px solid gray;
+                 width: 80%;
+                 justify-content: flex-end;
+                 font-size: 100%;
+            
+            }
+
+            .sort input{
+                height: 40px;
+                width: 70%;
+                font-size: 100%;
+                text-align: center;
+                border: none;
+                /* border: 2px saddlebrown solid; */
+            }
+            .l1{
+                height: min-content;
+                top: 0px;
+            }
+            .s1b3{
+                height:min-content ;
+            }
+            
+        }
+        @media(max-width:1440px) {
+            .d2 .s1{
+                font-size: 200%;
+            }
+            div{
+                width: 8%;
+            }
+            .d4{
+                width: 12%;
+            }
+            .d8{
+                width: 8%;
+            }
+            .s1b1 div{
+                width: 50%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 2px salmon solid; */
+                font-size: 80%;
+            }
+            .s p{
+                font-size: 100%;
+                color: grey;
+            }
+            .sort label{
+                 border: 1px solid gray;
+                 width: 80%;
+                 justify-content: flex-end;
+                 font-size: 100%;
+            
+            }
+
+            .sort input{
+                height: 40px;
+                width: 70%;
+                font-size: 100%;
+                text-align: center;
+                border: none;
+                /* border: 2px saddlebrown solid; */
+            }
+            
+        }
+         @media(max-width:1024px) {
+            .d2 .s1{
+                font-size: 180%;
+            }
+            div{
+                width: 8%;
+                font-size: 100%;
+            }
+            .d4{
+                width: 20%;
+            }
+            .d8{
+                width: 10%;
+            }
+            .s1b1 div{
+            width: 50%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            /* border: 2px salmon solid; */
+            justify-content: left;
+            font-size:80%;
+            gap: 0px;
+            }
+            .sort label{
+            border: 1px solid gray;
+            width: 120%;
+            justify-content: flex-end;
+            font-size: 80%;
+            
+        }
+
+            .sort input{
+                height: 40px;
+                width: 70%;
+                font-size: 100%;
+                text-align: center;
+                border: none;
+            }
+            .s1b2{
+                    font-size: 70%;      
+                }
+        
+            
+            .c1{
+                width: 70%;
+                font-size: 80%;
+                height: min-content;
+                padding: 0px;
+
+            }
+            .c2{
+                width: 30%;
+                height: min-content;
+            }
+
+            .s1b3 div img{
+        
+                width: 45%;
+            
+            }
+
+            .l1{
+                padding: 0px;
+                 padding-top: 10px;
+            }
+            .l1 label{
+                font-size: 80%;
+
+            }
+            .c3{
+                width: 70%;
+                font-size: 110%;
+                height: min-content;
+                padding: 0px;
+                font-weight: bolder;
+    
+            }
+            .l2{
+                height: min-content;
+                padding: 0px;
+
+            }
+            .l2 label{
+                font-size: 100%;
+
+            }
+            .l3{
+                height: min-content;
+                padding: 0px;
+                padding-top: 10px;
+            }
+            .l3 label{
+                font-size: 80%;
+
+            }
+            .e2d1 p {
+                font-size: 90%;
+            }
+
+        
+        }
+
+
+
+        @media(max-width:768px) {
+            .d2 .s1{
+                font-size: 130%;
+            }
+            .d2 .s3{
+                font-size: 150%;
+            }
+            .d2 .s2{
+                font-size: 130%;
+            }
+            div{
+                width: 12%;
+                font-size: 70%;
+
+            }
+            div img{
+                width: 50px;
+                height: 50px;
+            }
+            .d4{
+                width: 25%;
+            }
+            .d8{
+                width: 8%;
+                
+            }
+            .d8 img{
+                width: 20px;
+                height: 20px;
+            }
+            .s1b2{
+                font-size: 80%;
+            }
+             .s1b1 div{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            /* border: 2px salmon solid; */
+            justify-content: center;
+            font-size:150%;
+            }
+
+            .s1d1{
+                width: 25%;
+            }
+            .s1d2{
+                width: 80%;
+            }
+            .sort{
+                width: 40%;
+            }
+
+            .sort label{
+                border: 1px solid gray;
+                width: 130%;
+                justify-content: flex-end;
+                font-size: 190%;
+            
+            }
+
+            .sort input{
+                height: 30px;
+                width: 70%;
+                font-size: 100%;
+                text-align: center;
+                border: none;
+            }
+            .c1{
+                width: 70%;
+                font-size: 160%;
+                height: min-content;
+                padding: 0px;
+
+            }
+            .c2{
+                width: 30%;
+                height: min-content;
+            }
+
+            .s1b3 div img{ 
+                width: 45%;
+                height: 25px;
+
+            }
+            .s1b5 div img{ 
+                width: 45%;
+                height: 25px;
+
+            }
+            .l1{
+                padding: 0px;
+                 padding-top: 10px;
+            }
+            .l1 label{
+                font-size: 250%;
+
+            }
+            .s1b2{
+                font-size: 100%;      
+            }
+            .c3{
+            width: 70%;
+            font-size: 150%;
+            height: min-content;
+            padding: 0px;
+            font-weight: bolder;
+
+            }
+            .l2 label{
+            font-size: 200%;
+
+            }
+            .l3 label{
+                font-size: 250%;
+
+            }
+            .l3{
+                height: min-content;
+                padding: 0px;
+                padding-top: 0px;
+            }
+            .l3 label{
+                font-size: 240%;
+
+            }
+            .e2d1{
+
+                width: 25%;
+                height: 300px;
+            }
+            .e2d1 p {
+                font-size: 190%;
+            }
+    
+   
+            
+
+
+   
+        }
+              @media(max-width:425px) {
+  
+            .se1 div{
+                width: 10%;
+                font-size: 45%;
+                font-weight: bold;
+            }
+            div img{
+                width: 30px;
+                height: 30px;
+            }
+            .se1 .d8{
+                width: 9%;
+                font-size: 40%;
+                font-weight: bold;
+
+
+            }
+            .se1 .d8 img{
+                width: 10px;
+                height: 10px;
+            }
+            .se1 div.d7{
+                width: 35%;
+            }
+            .se1 .d7 .srch{
+                width: 100%;
+            }
+            .srch{
+                font-size: 50%;
+            }
+            .sec1 .d1{
+                width: 50%;
+                height: 270px;
+
+            }
+            .s1d1{
+                width: 35%;
+            }
+            .s1d2{
+                width: 60%;
+            }
+            .sort{
+                width: 90%;
+            }
+
+            .sort label{
+                border: 1px solid gray;
+                width: 130%;
+                justify-content: flex-end;
+                font-size: 190%;
+            
+            }
+
+            .sort input{
+                height: 30px;
+                width: 70%;
+                font-size: 100%;
+                text-align: center;
+                border: none;
+            }
+            .e2d1{
+
+                width: 80%;
+                height: 300px;
+            }
+            .e2d1 p {
+                font-size: 240%;
+            }
+            .s p{
+            font-size: 90%;
+            color: grey;
+            }
+            .s{
+                font-size: 70%;
+            }
+            .c2{
+                width: 30%;
+                height: min-content;
+            }
+
+            .s1b3 div img{ 
+                width: 55%;
+                height: 20px;
+
+            }
+            .s1b5 div img{ 
+                width: 55%;
+                height: 20px;
+
+            }
+        }
+        @media(max-width:375px) {
+            .c1{
+                width: 70%;
+                font-size: 140%;
+                height: min-content;
+                padding: 0px;
+
+            }
+            .c3{
+                font-size: 140%;
+
+
+            }
+            .c2{
+                width: 30%;
+                height: min-content;
+            }
+
+            .s1b3 div img{ 
+                width: 55%;
+                height: 20px;
+
+            }
+            .s1b5 div img{ 
+                width: 55%;
+                height: 20px;
+
+            }
+            .e2d1 p {
+                font-size: 215%;
+            }
+            .sort{
+                width: 100%;
+            }
+      
+        }
+        @media(max-width:320px) {
+            .c1{
+                width: 70%;
+                font-size: 130%;
+                height: min-content;
+                padding: 0px;
+                font-weight: bolder;
+
+            }
+            .c3{
+                font-size: 110%;
+
+
+            }
+            .c2{
+                width: 30%;
+                height: min-content;
+            }
+
+            .s1b3 div img{ 
+                width: 75%;
+                height: 15px;
+
+            }
+            .s1b5 div img{ 
+                width: 75%;
+                height: 15px;
+
+            }
+            .s1b4 .l2{
+                height: 200px;
+            }
+            .s1b4{
+                height: min-content;
+            }
+            .l3 label{
+                font-size: 200%;
+
+            }
+            .l2 label{
+            font-size: 200%;
+
+            }
+            .s1b2{
+                font-size: 70%;      
+            }
+
+        }
+   
+    
+
+        </style>
+</head>
+<body>
+    <section class="se1" >  
+        <a><div>
+           <a href="home.html"><img src="image/download.jpg" width="75px" height="75px"></a>
+        </div>
+        <div><a href="imen.html">Men</a></div>
+        <div><a href="#">Women</a></div>
+        <div class="d4"><a href="homw & living.html">Home & Living</a></div>
+        <div><a href="beuty.html">Beauty</a></div>
+        <div><a href="image/download.jpg">Studio</a></div>
+        <div class="d7">
+           <input class="srch" type="text" placeholder="Search for Products Brands & More">
+        </div>
+        <a href="profile.html"><div class="d8">
+        <img src="image/profile.png" width="40px" height="40px">Profile</a></div>
+        <div class="d8"><img src="image/wish.png" width="40px" height="40px">Wishlist</div>
+        <div class="d8"><img src="image/bag.png" width="40px" height="30px">Bag</div>
+
+</section>
+<section class="s">
+    <a>Home</a> / <a>Clothing</a> / <a><b>Myntra Fashion Store</b><br></a>
+    <p>Myntra Fashion Store - 24105 Items</p>
+
+</section>
+   
+
+
+
+
+    <section class="s1">
+        <div class="s1d1">
+            <div class="s1b1">
+                <div>FILTERS </div> 
+                <div >Clear all</div> 
+            </div>
+
+            <div class="s1b2">
+                <label>
+                    <input type="radio" name="gender" onclick="window.location ='imen.html'">
+                MEN</label>
+                <label>
+                    <input type="radio"  name="gender" value="Women" onclick="window.location= 'women.html'">
+                WOMEN</label>
+                <label>
+                    <input type="radio"  name="gender" onclick="window.location ='kids.html'">
+                KIDS</label>
+                <label>
+                    <input type="radio"  name="gender" onclick="window.location ='beuty.html'">
+                BEAUTY</label>
+    
+
+            </div>
+
+            <div class="s1b3">
+                <div class="c1">CATEGORIES </div> 
+                <div class="c2"><img src="image/download (1).png"></div> 
+
+                <div  class="l1">
+                    <label>
+                        <input type="checkbox">
+                        Shirts (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Trousers (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Suits (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Sweat Shirts (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Blazzers (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        T-Shirts (51515)
+                    </label>
+                    <label>
+                            <input type="checkbox">
+                            Formal Shoes
+                    </label> 
+                    <label >
+                            <a>+ More</a> 
+                            
+                    </label>         
+
+                </div>
+
+            </div>
+            <div class="s1b3">
+                <div class="c1">BRAND </div> 
+                <div class="c2"><img src="image/download (1).png"></div> 
+
+                <div  class="l1">
+                    <label>
+                        <input type="checkbox">
+                        Allen Solly (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Levis (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Levis (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Levis (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        BLevis (51515)
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Levis (51515)
+                    </label>
+                    <label>
+                            <input type="checkbox">
+                            Levis
+                    </label> 
+                    <label >
+                            <a>+ More</a> 
+                            
+                    </label>         
+                </div>
+        </div>
+                <div class="s1b4">
+                     <div class="c3">PRICE</div> 
+                <div class="c2"></div> 
+
+                <div  class="l2">
+                    <label>
+                        <input type="checkbox">
+                        Rs300-Rs600 
+                    </label> 
+                    <label>
+                        <input type="checkbox">
+                        Rs700-Rs1200 
+                    </label> 
+                    <label>
+                        <input type="checkbox">
+                        Rs1300-Rs2000 
+                    </label> 
+                    <label>
+                        <input type="checkbox">
+                        Rs2000-Rs6000 
+                    </label> 
+                    <label>
+                        <input type="checkbox">
+                        Rs6000-Rs10000 
+                    </label>     
+                </div>
+        
+
+      
+
+
+                 </div>
+
+                 <div class="s1b3">
+                    <div class="c1">COLOUR </div> 
+                    <div class="c2"><img src="image/download (1).png"></div> 
+    
+                    <div  class="l3">
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co1"></div> Red (51515)
+                        </label>
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co2"></div> Blue (51515)
+                        </label>
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co3"></div> Greenyellow (51515)
+                        </label>
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co4"></div> Brown (51515)
+                        </label>
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co5"></div> Black (51515)
+                        </label>
+                        <label>
+                            <input type="checkbox">
+
+                            <div class="co6"></div> White (51515)
+                        </label>
+                        
+
+                        <label >
+                                <a>+ More</a> 
+                                
+                        </label>         
+                    </div>
+            </div>
+
+
+
+        </div>
+        <div class="s1d2">
+
+            <div class="s1e1">
+                <div class="sort">
+                    <label>Sort By:
+                        <input list="Sort By" >
+                        <datalist id="Sort By">
+                            <option value="Popularity">
+                            <option value="Recomended">
+                            <option value="What's New">
+                            <option value="Better Discount">
+                            <option value="Costomer Rating">
+                            <option value="Price Low To High">
+                            <option value="Price High To Low">            
+                
+                
+
+                            </option>
+                        </datalist>
+                    </label>
+                </div>
+            </div>
+
+            <div class="s1e2">
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>        <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+                <div class="e2d1">
+                    <p>Allen Solly</p>
+                    <p>Slim Fit Formal Shirt</p>
+                    <p>Rs.563 <del>Rs.1499</del>(71%off)</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>  

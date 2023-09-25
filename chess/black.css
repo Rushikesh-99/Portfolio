@@ -1,0 +1,207 @@
+ 
+         #brook1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            left: 000px;
+            z-index: 1;
+            /* top: 100px; */
+        }
+
+        #brook2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+
+        #bhorse1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            /* right: 100px; */
+            left: 0px;
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+        
+        
+        #bhorse2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+
+        #bbishop1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+        
+
+        #bbishop2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 000px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+
+        #bqueen{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 000px;
+            right: 000px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+
+        #bking{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 100px; */
+
+
+        }
+
+        #bpawn1{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn2{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+        #bpawn3{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn4{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn5{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn6{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 00px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn7{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+        
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* top: 300px; */
+
+
+        }
+
+        #bpawn8{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 000px;
+            right: 00px;
+            /* left: 0px; */
+            z-index: 1;
+            /* display: none; */
+            /* top: 300px; */
+
+        }
+
+

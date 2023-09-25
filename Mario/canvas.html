@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            animation: all 10s ease-in-out;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #img1{
+            position: absolute;
+            left:0;
+            top: 760px;
+            transition: all 10s ease-in-out;
+        }
+        canvas{
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mario Castle</h1>
+    <canvas id="can1" width="1000" height="1000"></canvas>
+
+    <img src="mario.gif" id="img1" >
+    
+
+    <script>
+
+        let can1 = document.getElementById("can1");
+
+        ctx = can1.getContext("2d")
+        ctx.fillStyle = 'brown'
+        ctx.fillRect(350,0,300,250)
+
+        ctx.fillRect(250,250,500,350)
+
+        ctx.fillRect(150,500,700,450)
+
+
+
+
+        ctx.clearRect(360,0,45,40)
+        ctx.clearRect(445,0,40,40)
+        ctx.clearRect(515,0,40,40)
+        ctx.clearRect(590,0,45,40)
+
+        ctx.fillStyle = 'black'
+
+
+        ctx.fillRect(395,105,70,140)
+
+        ctx.fillRect(535,105,70,140)
+
+
+
+
+        ctx.clearRect(275,250,45,40)
+        ctx.clearRect(350,250,45,40)
+        ctx.clearRect(430,250,45,40)
+        ctx.clearRect(510,250,45,40)
+        ctx.clearRect(600,250,45,40)
+        ctx.clearRect(680,250,45,40)
+
+        ctx.fillStyle = 'black'
+
+
+
+        ctx.fillRect(325,365,70,140)
+        ctx.fillRect(455,365,90,140)
+        ctx.fillRect(605,365,70,140)
+
+        
+        ctx.clearRect(160,500,65,40)
+
+        ctx.clearRect(275,500,45,40)
+        ctx.clearRect(275,500,45,40)
+        ctx.clearRect(350,500,45,40)
+        ctx.clearRect(430,500,45,40)
+        ctx.clearRect(510,500,45,40)
+        ctx.clearRect(600,500,45,40)
+        ctx.clearRect(680,500,45,40)
+        ctx.clearRect(775,500,65,40)
+
+
+        ctx.fillStyle = 'black'
+
+
+
+        ctx.fillRect(395,590,70,140)
+        ctx.fillRect(545,590,70,140)
+
+  
+
+        ctx.fillRect(325,810,70,140)
+        ctx.fillRect(440,770,120,180)
+        ctx.fillRect(605,810,70,140)
+
+
+        ctx.strokeStyle ='black'
+
+
+
+        ctx.strokeRect(350,40,50,30)
+        ctx.strokeRect(400,40,50,30)
+        ctx.strokeRect(450,40,50,30)
+        ctx.strokeRect(500,40,50,30)
+        ctx.strokeRect(550,40,50,30)
+        ctx.strokeRect(600,40,50,30)
+
+        ctx.strokeRect(350,70,50,30)
+        ctx.strokeRect(400,70,50,30)
+        ctx.strokeRect(450,70,50,30)
+        ctx.strokeRect(500,70,50,30)
+        ctx.strokeRect(550,70,50,30)
+        ctx.strokeRect(600,70,50,30)
+
+        
+        ctx.strokeRect(350,100,50,30)
+        ctx.strokeRect(400,100,50,30)
+        ctx.strokeRect(450,100,50,30)
+        ctx.strokeRect(500,100,50,30)
+        ctx.strokeRect(550,100,50,30)
+        ctx.strokeRect(600,100,50,30)
+
+        ctx.strokeRect(350,130,50,30)
+        ctx.strokeRect(400,130,50,30)
+        ctx.strokeRect(450,130,50,30)
+        ctx.strokeRect(500,130,50,30)
+        ctx.strokeRect(550,130,50,30)
+        ctx.strokeRect(600,130,50,30)
+
+        ctx.strokeRect(350,160,50,30)
+        ctx.strokeRect(400,160,50,30)
+        ctx.strokeRect(450,160,50,30)
+        ctx.strokeRect(500,160,50,30)
+        ctx.strokeRect(550,160,50,30)
+        ctx.strokeRect(600,160,50,30)
+
+        
+        ctx.strokeRect(350,190,50,30)
+        ctx.strokeRect(400,190,50,30)
+        ctx.strokeRect(450,190,50,30)
+        ctx.strokeRect(500,190,50,30)
+        ctx.strokeRect(550,190,50,30)
+        ctx.strokeRect(600,190,50,30)
+
+        ctx.strokeRect(350,220,50,30)
+        ctx.strokeRect(400,220,50,30)
+        ctx.strokeRect(450,220,50,30)
+        ctx.strokeRect(500,220,50,30)
+        ctx.strokeRect(550,220,50,30)
+        ctx.strokeRect(600,220,50,30)
+
+        // ctx.strokeRect(250,250,50,30)
+        // ctx.strokeRect(300,250,50,30)
+        // ctx.strokeRect(350,250,50,30)
+        // ctx.strokeRect(400,250,50,30)
+        // ctx.strokeRect(450,250,50,30)
+        // ctx.strokeRect(500,250,50,30)
+        // ctx.strokeRect(550,250,50,30)
+        // ctx.strokeRect(600,250,50,30)
+        // ctx.strokeRect(650,250,50,30)
+        // ctx.strokeRect(700,250,50,30)
+
+        ctx.strokeRect(250,290,50,30)
+        ctx.strokeRect(300,290,50,30)
+        ctx.strokeRect(350,290,50,30)
+        ctx.strokeRect(400,290,50,30)
+        ctx.strokeRect(450,290,50,30)
+        ctx.strokeRect(500,290,50,30)
+        ctx.strokeRect(550,290,50,30)
+        ctx.strokeRect(600,290,50,30)
+        ctx.strokeRect(650,290,50,30)
+        ctx.strokeRect(700,290,50,30)
+
+        
+        ctx.strokeRect(250,320,50,30)
+        ctx.strokeRect(300,320,50,30)
+        ctx.strokeRect(350,320,50,30)
+        ctx.strokeRect(400,320,50,30)
+        ctx.strokeRect(450,320,50,30)
+        ctx.strokeRect(500,320,50,30)
+        ctx.strokeRect(550,320,50,30)
+        ctx.strokeRect(600,320,50,30)
+        ctx.strokeRect(650,320,50,30)
+        ctx.strokeRect(700,320,50,30)
+        
+
+        ctx.strokeRect(250,350,50,30)
+        ctx.strokeRect(300,350,50,30)
+        ctx.strokeRect(350,350,50,30)
+        ctx.strokeRect(400,350,50,30)
+        ctx.strokeRect(450,350,50,30)
+        ctx.strokeRect(500,350,50,30)
+        ctx.strokeRect(550,350,50,30)
+        ctx.strokeRect(600,350,50,30)
+        ctx.strokeRect(650,350,50,30)
+        ctx.strokeRect(700,350,50,30)
+
+        ctx.strokeRect(250,380,50,30)
+        ctx.strokeRect(300,380,50,30)
+        ctx.strokeRect(350,380,50,30)
+        ctx.strokeRect(400,380,50,30)
+        ctx.strokeRect(450,380,50,30)
+        ctx.strokeRect(500,380,50,30)
+        ctx.strokeRect(550,380,50,30)
+        ctx.strokeRect(600,380,50,30)
+        ctx.strokeRect(650,380,50,30)
+        ctx.strokeRect(700,380,50,30)
+
+        ctx.strokeRect(250,410,50,30)
+        ctx.strokeRect(300,410,50,30)
+        ctx.strokeRect(350,410,50,30)
+        ctx.strokeRect(400,410,50,30)
+        ctx.strokeRect(450,410,50,30)
+        ctx.strokeRect(500,410,50,30)
+        ctx.strokeRect(550,410,50,30)
+        ctx.strokeRect(600,410,50,30)
+        ctx.strokeRect(650,410,50,30)
+        ctx.strokeRect(700,410,50,30)
+        
+        ctx.strokeRect(250,440,50,30)
+        ctx.strokeRect(300,440,50,30)
+        ctx.strokeRect(350,440,50,30)
+        ctx.strokeRect(400,440,50,30)
+        ctx.strokeRect(450,440,50,30)
+        ctx.strokeRect(500,440,50,30)
+        ctx.strokeRect(550,440,50,30)
+        ctx.strokeRect(600,440,50,30)
+        ctx.strokeRect(650,440,50,30)
+        ctx.strokeRect(700,440,50,30)
+
+        ctx.strokeRect(250,470,50,30)
+        ctx.strokeRect(300,470,50,30)
+        ctx.strokeRect(350,470,50,30)
+        ctx.strokeRect(400,470,50,30)
+        ctx.strokeRect(450,470,50,30)
+        ctx.strokeRect(500,470,50,30)
+        ctx.strokeRect(550,470,50,30)
+        ctx.strokeRect(600,470,50,30)
+        ctx.strokeRect(650,470,50,30)
+        ctx.strokeRect(700,470,50,30)
+
+
+
+
+        ctx.strokeRect(150,540,50,30)
+        ctx.strokeRect(200,540,50,30)   
+        ctx.strokeRect(250,540,50,30)
+        ctx.strokeRect(300,540,50,30)
+        ctx.strokeRect(350,540,50,30)
+        ctx.strokeRect(400,540,50,30)
+        ctx.strokeRect(450,540,50,30)
+        ctx.strokeRect(500,540,50,30)
+        ctx.strokeRect(550,540,50,30)
+        ctx.strokeRect(600,540,50,30)
+        ctx.strokeRect(650,540,50,30)
+        ctx.strokeRect(700,540,50,30)
+        ctx.strokeRect(750,540,50,30)
+        ctx.strokeRect(800,540,50,30)
+
+        ctx.strokeRect(150,570,50,30)
+        ctx.strokeRect(200,570,50,30)   
+        ctx.strokeRect(250,570,50,30)
+        ctx.strokeRect(300,570,50,30)
+        ctx.strokeRect(350,570,50,30)
+        ctx.strokeRect(400,570,50,30)
+        ctx.strokeRect(450,570,50,30)
+        ctx.strokeRect(500,570,50,30)
+        ctx.strokeRect(550,570,50,30)
+        ctx.strokeRect(600,570,50,30)
+        ctx.strokeRect(650,570,50,30)
+        ctx.strokeRect(700,570,50,30)
+        ctx.strokeRect(750,570,50,30)
+        ctx.strokeRect(800,570,50,30)
+
+
+
+        ctx.strokeRect(150,600,50,30)
+        ctx.strokeRect(200,600,50,30)   
+        ctx.strokeRect(250,600,50,30)
+        ctx.strokeRect(300,600,50,30)
+        ctx.strokeRect(350,600,50,30)
+        ctx.strokeRect(400,600,50,30)
+        ctx.strokeRect(450,600,50,30)
+        ctx.strokeRect(500,600,50,30)
+        ctx.strokeRect(550,600,50,30)
+        ctx.strokeRect(600,600,50,30)
+        ctx.strokeRect(650,600,50,30)
+        ctx.strokeRect(700,600,50,30)
+        ctx.strokeRect(750,600,50,30)
+        ctx.strokeRect(800,600,50,30)
+
+
+        ctx.strokeRect(150,630,50,30)
+        ctx.strokeRect(200,630,50,30)   
+        ctx.strokeRect(250,630,50,30)
+        ctx.strokeRect(300,630,50,30)
+        ctx.strokeRect(350,630,50,30)
+        ctx.strokeRect(400,630,50,30)
+        ctx.strokeRect(450,630,50,30)
+        ctx.strokeRect(500,630,50,30)
+        ctx.strokeRect(550,630,50,30)
+        ctx.strokeRect(600,630,50,30)
+        ctx.strokeRect(650,630,50,30)
+        ctx.strokeRect(700,630,50,30)
+        ctx.strokeRect(750,630,50,30)
+        ctx.strokeRect(800,630,50,30)
+
+
+        ctx.strokeRect(150,660,50,30)
+        ctx.strokeRect(200,660,50,30)   
+        ctx.strokeRect(250,660,50,30)
+        ctx.strokeRect(300,660,50,30)
+        ctx.strokeRect(350,660,50,30)
+        ctx.strokeRect(400,660,50,30)
+        ctx.strokeRect(450,660,50,30)
+        ctx.strokeRect(500,660,50,30)
+        ctx.strokeRect(550,660,50,30)
+        ctx.strokeRect(600,660,50,30)
+        ctx.strokeRect(650,660,50,30)
+        ctx.strokeRect(700,660,50,30)
+        ctx.strokeRect(750,660,50,30)
+        ctx.strokeRect(800,660,50,30)
+
+
+        ctx.strokeRect(150,690,50,30)
+        ctx.strokeRect(200,690,50,30)   
+        ctx.strokeRect(250,690,50,30)
+        ctx.strokeRect(300,690,50,30)
+        ctx.strokeRect(350,690,50,30)
+        ctx.strokeRect(400,690,50,30)
+        ctx.strokeRect(450,690,50,30)
+        ctx.strokeRect(500,690,50,30)
+        ctx.strokeRect(550,690,50,30)
+        ctx.strokeRect(600,690,50,30)
+        ctx.strokeRect(650,690,50,30)
+        ctx.strokeRect(700,690,50,30)
+        ctx.strokeRect(750,690,50,30)
+        ctx.strokeRect(800,690,50,30)
+
+        ctx.strokeRect(150,720,50,30)
+        ctx.strokeRect(200,720,50,30)   
+        ctx.strokeRect(250,720,50,30)
+        ctx.strokeRect(300,720,50,30)
+        ctx.strokeRect(350,720,50,30)
+        ctx.strokeRect(400,720,50,30)
+        ctx.strokeRect(450,720,50,30)
+        ctx.strokeRect(500,720,50,30)
+        ctx.strokeRect(550,720,50,30)
+        ctx.strokeRect(600,720,50,30)
+        ctx.strokeRect(650,720,50,30)
+        ctx.strokeRect(700,720,50,30)
+        ctx.strokeRect(750,720,50,30)
+        ctx.strokeRect(800,720,50,30)
+
+        ctx.strokeRect(150,750,50,30)
+        ctx.strokeRect(200,750,50,30)   
+        ctx.strokeRect(250,750,50,30)
+        ctx.strokeRect(300,750,50,30)
+        ctx.strokeRect(350,750,50,30)
+        ctx.strokeRect(400,750,50,30)
+        ctx.strokeRect(450,750,50,30)
+        ctx.strokeRect(500,750,50,30)
+        ctx.strokeRect(550,750,50,30)
+        ctx.strokeRect(600,750,50,30)
+        ctx.strokeRect(650,750,50,30)
+        ctx.strokeRect(700,750,50,30)
+        ctx.strokeRect(750,750,50,30)
+        ctx.strokeRect(800,750,50,30)
+
+
+        ctx.strokeRect(150,780,50,30)
+        ctx.strokeRect(200,780,50,30)   
+        ctx.strokeRect(250,780,50,30)
+        ctx.strokeRect(300,780,50,30)
+        ctx.strokeRect(350,780,50,30)
+        ctx.strokeRect(400,780,50,30)
+        ctx.strokeRect(450,780,50,30)
+        ctx.strokeRect(500,780,50,30)
+        ctx.strokeRect(550,780,50,30)
+        ctx.strokeRect(600,780,50,30)
+        ctx.strokeRect(650,780,50,30)
+        ctx.strokeRect(700,780,50,30)
+        ctx.strokeRect(750,780,50,30)
+        ctx.strokeRect(800,780,50,30)
+
+
+
+        ctx.strokeRect(150,810,50,30)
+        ctx.strokeRect(200,810,50,30)   
+        ctx.strokeRect(250,810,50,30)
+        ctx.strokeRect(300,810,50,30)
+        ctx.strokeRect(350,810,50,30)
+        ctx.strokeRect(400,810,50,30)
+        ctx.strokeRect(450,810,50,30)
+        ctx.strokeRect(500,810,50,30)
+        ctx.strokeRect(550,810,50,30)
+        ctx.strokeRect(600,810,50,30)
+        ctx.strokeRect(650,810,50,30)
+        ctx.strokeRect(700,810,50,30)
+        ctx.strokeRect(750,810,50,30)
+        ctx.strokeRect(800,810,50,30)
+
+
+        ctx.strokeRect(150,840,50,30)
+        ctx.strokeRect(200,840,50,30)   
+        ctx.strokeRect(250,840,50,30)
+        ctx.strokeRect(300,840,50,30)
+        ctx.strokeRect(350,840,50,30)
+        ctx.strokeRect(400,840,50,30)
+        ctx.strokeRect(450,840,50,30)
+        ctx.strokeRect(500,840,50,30)
+        ctx.strokeRect(550,840,50,30)
+        ctx.strokeRect(600,840,50,30)
+        ctx.strokeRect(650,840,50,30)
+        ctx.strokeRect(700,840,50,30)
+        ctx.strokeRect(750,840,50,30)
+        ctx.strokeRect(800,840,50,30)
+
+
+        ctx.strokeRect(150,870,50,30)
+        ctx.strokeRect(200,870,50,30)   
+        ctx.strokeRect(250,870,50,30)
+        ctx.strokeRect(300,870,50,30)
+        ctx.strokeRect(350,870,50,30)
+        ctx.strokeRect(400,870,50,30)
+        ctx.strokeRect(450,870,50,30)
+        ctx.strokeRect(500,870,50,30)
+        ctx.strokeRect(550,870,50,30)
+        ctx.strokeRect(600,870,50,30)
+        ctx.strokeRect(650,870,50,30)
+        ctx.strokeRect(700,870,50,30)
+        ctx.strokeRect(750,870,50,30)
+        ctx.strokeRect(800,870,50,30)
+
+
+
+        
+        ctx.strokeRect(150,900,50,30)
+        ctx.strokeRect(200,900,50,30)   
+        ctx.strokeRect(250,900,50,30)
+        ctx.strokeRect(300,900,50,30)
+        ctx.strokeRect(350,900,50,30)
+        ctx.strokeRect(400,900,50,30)
+        ctx.strokeRect(450,900,50,30)
+        ctx.strokeRect(500,900,50,30)
+        ctx.strokeRect(550,900,50,30)
+        ctx.strokeRect(600,900,50,30)
+        ctx.strokeRect(650,900,50,30)
+        ctx.strokeRect(700,900,50,30)
+        ctx.strokeRect(750,900,50,30)
+        ctx.strokeRect(800,900,50,30)
+
+
+        ctx.strokeRect(150,930,50,20)
+        ctx.strokeRect(200,930,50,20)   
+        ctx.strokeRect(250,930,50,20)
+        ctx.strokeRect(300,930,50,20)
+        ctx.strokeRect(350,930,50,20)
+        ctx.strokeRect(400,930,50,20)
+        ctx.strokeRect(450,930,50,20)
+        ctx.strokeRect(500,930,50,20)
+        ctx.strokeRect(550,930,50,20)
+        ctx.strokeRect(600,930,50,20)
+        ctx.strokeRect(650,930,50,20)
+        ctx.strokeRect(700,930,50,20)
+        ctx.strokeRect(750,930,50,20)
+        ctx.strokeRect(800,930,50,20)
+
+
+        let a = document.getElementById('img1')
+        console.log(a);
+
+
+
+        a.addEventListener('click',()=>{
+            a.style.cssText = 'left:40%;'
+
+        })
+
+        a.addEventListener('dblclick',()=>{
+            a.style.display = 'none'
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
